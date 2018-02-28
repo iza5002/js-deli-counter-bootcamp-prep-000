@@ -17,9 +17,9 @@ if(deli.length === 0){
       // console.log(response);
       return response;
     }
- };	 };
+};
  	 
--function takeANumber(){	+function nowServing(katzDeli){
+function takeANumber(){	+function nowServing(katzDeli){
 -  // your code here	+// If there is nobody in line, it should return "There is nobody waiting to be served!"
 +  if (0 === katzDeli.length){
 +    var response = "There is nobody waiting to be served!";

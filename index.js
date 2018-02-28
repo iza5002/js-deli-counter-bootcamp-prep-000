@@ -9,11 +9,11 @@ if(deli.length === 0){
       return response;
     }else{
 
-      var queue = [];
-+      deli.forEach(function(person, index){
-+        queue.push((index + 1).toString() + ". " + person);
-+      });
-+      var response = "The line is currently: " + queue.join(", ")
+    var queue = [];
+      deli.forEach(function(person, index){
+        queue.push((index + 1).toString() + ". " + person);
+      });
+      var response = "The line is currently: " + queue.join(", ")
 +      // console.log(response);
 +      return response;
 +    }

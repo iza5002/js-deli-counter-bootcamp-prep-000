@@ -44,25 +44,16 @@ function takeANumber(katzDeli, name){
   return response;
 }
 
-function currentLine(line){
-  if (line.length === 0){
-    return "The line is currently empty."
-  }else{
-    var lineObject = {};
-    for (var i=0; i<line.length; i++){
-      lineObject[i+1] = line[i]
+
+function currentLine(inLine){
+  var lineArr = [];
+  if(inLine.length === 0){
+    return 'The line is currently empty.';
+  } else {
+    for(var i = 0; i < inLine.length; i++){
+      lineArr.push(`${i + 1}. ${inLine[i]}`);  
     }
-    console.log(lineObject)
   }
-  
-  var item = ''
-  var arr = ["The line is currently: "]
-  for (var key in lineObject){
-    item = key + ": " + lineObject[key]
-    arr.push(item)
-  }
-  return arr;
-
+  return `The line is currently: ${lineArr.join(', ')}`;
 }
-
-currentLine(["Bill", "Jane", "Ann"])
+currentLine(["Bill", "Jane", "Ann"]);

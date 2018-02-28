@@ -14,9 +14,9 @@ if(deli.length === 0){
         queue.push((index + 1).toString() + ". " + person);
       });
       var response = "The line is currently: " + queue.join(", ")
-+      // console.log(response);
-+      return response;
-+    }
+      // console.log(response);
+      return response;
+    }
  };	 };
  	 
 -function takeANumber(){	+function nowServing(katzDeli){

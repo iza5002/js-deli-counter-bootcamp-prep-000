@@ -40,6 +40,6 @@ function takeANumber(katzDeli, name){
   // return position in line
   var position = katzDeli.length + 1;
   katzDeli.push(name);  
-  var response = "Welcome, " + name + ". You are number" position  " in line.";
+  var response = "Welcome, " + name + ". You are number" + position + " in line.";
   return response;
 }

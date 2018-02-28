@@ -1,12 +1,6 @@
     
 'use strict';
  	 
--function line() 
-
-{	+// var katzDeli = [];
--  // your code here	+
--};	
- 	 
 -function nowServing(){	+function line(deli){
 -  // your code here	+    if(deli.length === 0){
 +      var response = "The line is currently empty.";

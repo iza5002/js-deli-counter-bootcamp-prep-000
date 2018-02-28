@@ -44,7 +44,7 @@ function takeANumber(katzDeli, name){
   return response;
 }
 
-function currentLine1(line){
+function currentLine(line){
   if (line.length === 0){
     return "The line is currently empty."
   }else{
@@ -65,4 +65,4 @@ function currentLine1(line){
 
 }
 
-currentLine1(["Bill", "Jane", "Ann"])
+currentLine(["Bill", "Jane", "Ann"])

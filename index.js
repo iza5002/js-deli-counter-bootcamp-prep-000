@@ -54,6 +54,7 @@ function currentLine1(line){
     }
     console.log(lineObject)
   }
+  
   var item = ''
   var arr = ["The line is currently: "]
   for (var key in lineObject){

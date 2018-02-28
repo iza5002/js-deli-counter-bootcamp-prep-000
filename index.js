@@ -1,13 +1,15 @@
     
 'use strict';
  	 
--function nowServing(){	+function line(deli){
--  // your code here	+    if(deli.length === 0){
-+      var response = "The line is currently empty.";
-+      // console.log(response);
-+      return response;
-+    }else{
-+      var queue = [];
+function line(deli){
+// your code here	
+if(deli.length === 0){
+      var response = "The line is currently empty.";
+      // console.log(response);
+      return response;
+    }else{
+
+      var queue = [];
 +      deli.forEach(function(person, index){
 +        queue.push((index + 1).toString() + ". " + person);
 +      });

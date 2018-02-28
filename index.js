@@ -20,27 +20,26 @@ if(deli.length === 0){
 };
  	 
 function nowServing(katzDeli){
-  // your code here	+// If there is nobody in line, it should return "There is nobody waiting to be served!"
-+  if (0 === katzDeli.length){
-+    var response = "There is nobody waiting to be served!";
-+    console.log(response);
-+    return response;
-+  } 
-+  else { 
-+// return the next person in line and then remove them from the line.
-+    var nextPerson = katzDeli.shift()
-+    var response = "Currently serving " + nextPerson + ".";
-+    console.log(response);
-+    return response;
-+  }
- };	 };
+// If there is nobody in line, it should return "There is nobody waiting to be served!"
+  if (0 === katzDeli.length){
+    var response = "There is nobody waiting to be served!";
+    console.log(response);
+    return response;
+  } 
+  else { 
+// return the next person in line and then remove them from the line.
+    var nextPerson = katzDeli.shift()
+    var response = "Currently serving " + nextPerson + ".";
+    console.log(response);
+    return response;
+  }
+};
  	 
-+function takeANumber(katzDeli, name){
-+  // accept a line of people and his/her name
-+  // return position in line
-+  var position = katzDeli.length + 1;
-+  katzDeli.push(name);  
-+  var response = "Welcome, " + name + ". You are number " + position + " in line.";
-+  return response;
-+}
-+
+function takeANumber(katzDeli, name){
+  // accept a line of people and his/her name
+  // return position in line
+  var position = katzDeli.length + 1;
+  katzDeli.push(name);  
+  var response = "Welcome, " + name + ". You are number " + position + " in line.";
+  return response;
+}

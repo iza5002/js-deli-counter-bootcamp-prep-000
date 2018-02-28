@@ -1,7 +1,9 @@
     
 'use strict';
  	 
--function line() {	+// var katzDeli = [];
+-function line() 
+
+{	+// var katzDeli = [];
 -  // your code here	+
 -};	
  	 
